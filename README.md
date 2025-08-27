@@ -10,7 +10,7 @@ The Advanced UAC REsearch Organization is a project based club focused on design
 
 ## Software 
 Software focuses on developing the flight computer and control systems:
-* Platform: Embedded Linux on Raspberry Pi Zero 2W
+* Platform: Embedded Linux on Raspberry Pi 02W
 * Firmware:
     * Written in C/C++ (ELF executables)
     * Flight controller logic, servo/motor control
@@ -22,16 +22,16 @@ Software focuses on developing the flight computer and control systems:
 * Flight Computer Architecture:
   * Realtime
     * Real-time control loops, filtering algorithms
-    * Control algorithms for stability and maneuvering
+    * Control algorithms for stability
   * Delayed
     * Navigation algorithms (Bezier curves, heuristic A* pathfinding)
     * Logging and telemetry
 
 ## Hardware
 Hardware development ensures robust, modular, and scalable avionics:
-* Hardware Abstraction Layer (HAL): Converts raw sensor data to meaningful SI units; manages actuator control.
+* Hardware Abstraction Layer (HAL): Converts raw sensor data to meaningful SI units (when applicable)
 * PCB Design:
-  * Custom board integrating Pi Zero 2W, IMU, GPS, servos, motor controllers
+  * Custom board integrating Pi02W, IMU, GPS, servos, motor controllers
 * Control Systems:
   * Manual RC backup control
   * Planned LiDAR integration for obstacle detection
