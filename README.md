@@ -8,36 +8,39 @@ The Advanced UAC REsearch Organization is a project based club focused on design
 | **Phase 3:** Optimization & Autonomy | Advanced Control       | Migrate to optimized C/C++ software, custom PCB design, autonomous navigation and takeoff, refine control algorithms, target speed 200 mph.                     |
 | **Phase 4:** Fully Autonomous UAV    | Feature Expansion      | High-speed, fully autonomous aircraft with advanced features (mapping, sensor integration).                                                                     |
 
-# Software 
+## Software 
 Software focuses on developing the flight computer and control systems:
+* Platform: Embedded Linux on Raspberry Pi Zero 2W
+* Firmware:
+    * Written in C/C++ (ELF executables)
+    * Flight controller logic, servo/motor control
+    * Sensor integration: IMU, GPS, Battery Management System (BMS), RC receiver
+* Drivers:
+  * Flight controller driver
+  * GPS and sensor drivers
+  * Motor/servo control drivers
+* Flight Computer Architecture:
+  * Realtime
+    * Real-time control loops, filtering algorithms
+    * Control algorithms for stability and maneuvering
+  * Delayed
+    * Navigation algorithms (Bezier curves, heuristic A* pathfinding)
+    * Logging and telemetry
 
-Platform: Embedded Linux on Raspberry Pi Zero 2W
+## Hardware
+Hardware development ensures robust, modular, and scalable avionics:
+* Hardware Abstraction Layer (HAL): Converts raw sensor data to meaningful SI units; manages actuator control.
+* PCB Design:
+  * Custom board integrating Pi Zero 2W, IMU, GPS, servos, motor controllers
+* Control Systems:
+  * Manual RC backup control
+  * Planned LiDAR integration for obstacle detection
 
-Firmware:
-
-Written in C/C++ (ELF executables)
-
-Flight controller logic, servo/motor control
-
-Sensor integration: IMU, GPS, Battery Management System (BMS), RC receiver
-
-Drivers:
-
-Flight controller driver
-
-GPS and sensor drivers
-
-Motor/servo control drivers
-
-Flight Computer Architecture:
-
-Real-time control loops, filtering algorithms
-
-Control algorithms for stability and maneuvering
-
-Navigation algorithms (Bezier curves, heuristic A* pathfinding)
-
-Logging and telemetry
-
+## Research
+Research underpins all development by:
+* Evaluating existing UAV frameworks and code libraries
+* Investigating advanced navigation, sensor fusion, and flight dynamics
+* Identifying off-the-shelf components for cost-effective prototyping
+* Documenting findings for member onboarding and future iterations
 
 Overview documents, timelines, roadmaps, etc.
