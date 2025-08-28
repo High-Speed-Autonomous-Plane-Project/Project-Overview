@@ -1,4 +1,7 @@
 # Project-Overview
+
+![Decorative blueprint of airplane design](/assets/blueprint_background.png)
+
 The Advanced UAC Research Organization is a project based club focused on designing, building, and testing a high speed autonomous airplane. The project emphasizes hands-on engineering, collaboration, and applied research in software, hardware, and avionics. This roadmap is iterative and tentative as we learn and research new technologies.
 
 
